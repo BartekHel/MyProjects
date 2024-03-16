@@ -1,0 +1,8 @@
+pl\pols\lab\services\DataManagementServlet.class
+pl\polsl\lab\model\IncompatibleNumber.class
+pl\pols\lab\services\AddPostServlet.class
+pl\pols\lab\services\SearchServlet.class
+pl\polsl\lab\model\DataManagement.class
+pl\pols\lab\services\DeletePostServlet.class
+pl\pols\lab\services\HistoryServlet.class
+pl\pols\lab\services\DataBaseServlet.class

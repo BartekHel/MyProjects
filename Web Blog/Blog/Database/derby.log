@@ -1,0 +1,14 @@
+Mon Dec 11 08:18:47 CET 2023 : Serwer sieciowy Apache Derby - 10.16.1.1 - (1901046) uruchomiony i gotowy do zaakceptowania po³¹czeñ na porcie 1527 w {3} 
+----------------------------------------------------------------
+Mon Dec 11 08:20:22 CET 2023:
+ Uruchamianie wersji The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046) systemu Derby: instancja a816c00e-018c-57be-2095-ffffed769f1a
+w katalogu bazy danych C:\Users\SuperStudent-PL\Downloads\Blog\WebLab3\Database\Posts jdk.internal.loader.ClassLoaders$AppClassLoader@2a139a55 
+
+java.vendor=Oracle Corporation
+java.runtime.version=17.0.8+9-LTS-211
+user.dir=C:\Users\SuperStudent-PL\Downloads\db-derby-10.16.1.1-bin\db-derby-10.16.1.1-bin
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\SuperStudent-PL\Downloads\Blog\WebLab3\Database
+Uruchomiono program ³aduj¹cy klasê bazy danych - derby.database.classpath=''

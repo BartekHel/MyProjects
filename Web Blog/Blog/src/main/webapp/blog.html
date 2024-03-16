@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <title>Blog</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/ajax.js"></script>
+        <link rel="stylesheet" href="css/main2.css" type="text/css"/>
+    </head>
+    <body>
+        <h1>Blog o grach</h1>
+        <h1>Autor: Bartosz Heliński</h1>
+
+        <div class="menu-container">
+            <button class="menu-button active" data-target="main">Strona główna</button>
+            <button class="menu-button" data-target="author">O autorze</button>
+            <button class="menu-button" data-target="posts">Wyswietl posty</button>
+            <button class="menu-button" data-target="search">Wyszukaj post</button>
+            <button class="menu-button" data-target="add" style="display: none;">Dodaj post</button>
+            <button class="menu-button" data-target="delete" style="display: none;">Usuń post</button>
+            <button class="menu-button" data-target="history" onclick="getHistory('resultHis');">Historia</button>
+        </div>
+
+        <br><br>
+        <div class="content" id="main-content" >
+            Witaj na stronie głównej mojego blogu o grach. Enjoy!<br><br>
+            Zapraszam do eksplorowania różnych tematów związanych z grami - od najnowszych premier po dogłębne analizy mechaniki gier.<br>
+            Dołącz do dyskusji w społeczności graczy i odkrywaj porady, triki oraz ukryte perełki na różnych platformach.<br>
+            Bez względu na to, czy jesteś casualowym graczem czy hardcore'owym entuzjastą, znajdziesz tutaj coś dla siebie.<br>
+            Bądź na bieżąco z regularnymi aktualizacjami i zaczynaj przygodę z grami!<br>
+        </div>
+        <div class="content" id="author-content">
+            Jestem studentem informatyki a to jest moj projekt na Jave.<br><br>
+            Jestem zafascynowany swiatem kodowania i programowania. Moj projekt opiera sie na platformie Java, ktora jest niezwykle wszechstronna i potezna.<br>
+            W trakcie studiow informatycznych zglebiam tajniki algorytmow, struktur danych i projektowania oprogramowania.<br>
+            Chociaz czasami wyzwania programistyczne moga byc trudne, to wlasnie w rozwiazywaniu problemow widze prawdziwa frajde.<br>
+            Moja pasja do informatyki rozwija sie z kazdym nowym projektem, a Java daje mi narzedzia do tworzenia efektywnych i skalowalnych rozwiazan.<br>
+            Zapraszam do sledzenia mojej podrozy przez swiat gier!
+        </div>
+        <div class="content" id="posts-content">
+        </div>
+        <div class="content" id="search-content">
+            <h1>Podaj tytuł szukanego posta:</h1>
+            <input type="text" id="arg" name="arg" />
+            <input type="button" id="search" value="Szukaj" onclick="getResult('arg', 'result');" />
+            <p id="result"></p>
+        </div>
+        <div class="content" id="add-content">
+            <label for="arg1">Podaj tytuł posta:</label><br>
+            <input type="text" id="arg1" name="arg1" /><br>
+            <label for="arg2">Podaj treść posta:</label><br>
+            <textarea id="arg2" name="arg2" rows="5" cols="40"></textarea><br>
+            <input type="button" id="addB" value="Dodaj post" onclick="getPostAdd('arg1', 'arg2', 'resultAdd');" />
+            <p id="resultAdd"></p>
+        </div>
+        <div class="content" id="delete-content">
+            <h1>Podaj numer posta do usunięcia:</h1>
+            <input type="text" id="arg0" name="arg0" />
+            <input type="button" id="delB" value="Usun" onclick="getPostDel('arg0', 'resultD');" />
+            <p id="resultD"></p>
+        </div>
+        <div class="content" id="history-content">
+            <p id="resultHis"></p>
+        </div>
+
+        <script>
+            function getQueryParam(param) {
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+
+                if (urlParams.has(param))
+                    return urlParams.get(param);
+
+                return null;
+            }
+            const userTypeValue = getQueryParam('userType');
+
+            if (userTypeValue === 'owner') {
+                const addButton = document.querySelector('.menu-button[data-target="add"]');
+                const deleteButton = document.querySelector('.menu-button[data-target="delete"]');
+                const selectedContent1 = document.getElementById(`${addButton.getAttribute('data-target')}-content`);
+                const selectedContent2 = document.getElementById(`${deleteButton.getAttribute('data-target')}-content`);
+
+                selectedContent1.style.display = 'block';
+                selectedContent2.style.display = 'block';
+                addButton.style.display = 'block';
+                deleteButton.style.display = 'block';
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const buttons = document.querySelectorAll('.menu-button');
+                const contents = document.querySelectorAll('.content');
+
+                buttons.forEach(button => {
+                    button.addEventListener('click', function () {
+                        buttons.forEach(btn => btn.classList.remove('active'));
+                        contents.forEach(content => content.style.display = 'none');
+
+                        this.classList.add('active');
+
+                        const target = this.getAttribute('data-target');
+
+                        const selectedContent = document.getElementById(`${target}-content`);
+                        selectedContent.style.display = 'block';
+
+                        if (target === 'posts') {
+                            fetch('\datamanagement')
+                                    .then(response => {
+                                        if (!response.ok) {
+                                            throw new Error('Blad!');
+                                        }
+                                        return response.text();
+                                    })
+                                    .then(data => {
+                                        selectedContent.innerHTML = data;
+                                    })
+                                    .catch(error => {
+                                    });
+                        } else if (target === 'search') {
+                            var argInput = document.getElementById('arg');
+                            var resultElement = document.getElementById('result');
+                            resultElement.innerHTML = '';
+                            argInput.value = '';
+                        } else if (target === 'add') {
+                            var argInput1 = document.getElementById('arg1');
+                            var argInput2 = document.getElementById('arg2');
+                            var resultElement = document.getElementById('resultAdd');
+                            resultElement.innerHTML = '';
+                            argInput1.value = '';
+                            argInput2.value = '';
+                        } else if (target === 'delete') {
+                            var argInput = document.getElementById('arg0');
+                            var resultElement = document.getElementById('resultD');
+                            resultElement.innerHTML = '';
+                            argInput.value = '';
+                        }
+                    });
+                });
+
+                const mainButton = document.querySelector('.menu-button[data-target="main"]');
+                mainButton.click();
+            });
+        </script>
+    </body>
+</html>

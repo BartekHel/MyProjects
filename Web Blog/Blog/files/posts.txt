@@ -1,0 +1,81 @@
+20
+1.Stardew Valley
+Urokliwa gra symulacyjna, w ktorej uprawiasz rosliny i hodujesz zwierzeta.
+Polecana ze wzgledu na relaksujacy charakter oraz uroczy pikselowy styl grafiki.
+
+2.Rocket League
+Zabawna i dynamiczna gra sportowa, ktora laczy pilke nozna z akrobacjami samochodow.
+Polecana ze wzgledu na szybka akcje, proste zasady i mozliwosc zabawy z przyjaciolmi.
+
+3.Minecraft
+Kultowa gra sandboxowa, w ktorej gracze eksploruja otwarty swiat zbudowany z klockow.
+Polecana ze wzgledu na nieograniczone mozliwosci tworzenia i swobodej eksploracji.
+
+4.Dark Souls III
+Brutalnie trudna gra akcji RPG osadzona w mrocznym swiecie fantasy, gdzie gracz musi pokonywac poteznych przeciwnikow.
+Polecana dla milosnikow wyzwan, ceniacych gleboka mechanike walki, rozbudowany lore oraz atmosfere zagrozenia.
+
+5.Overwatch
+Dynamiczna strzelanka pierwszoosobowa z zespolowa walka, wybiera sie postacie z roznymi umiejetnosciami.
+Polecana ze wzgledu na intensywne starcia oraz strategiczny charakter rozgrywki.
+
+6.The Legend of Zelda: Breath of the Wild
+Wspaniala przygoda akcji-RPG, osadzona w rozleglym swiecie Hyrule, gdzie gracz wciela sie w Linka, eksplorujac pelen tajemnic lasy, gory i pustynie. 
+Polecana ze wzgledu na otwartosc swiata, nieszablonowe podejscie do rozgrywki oraz epickie walki z bossami.
+
+7.The Witcher 3: Wild Hunt
+Epicka gra RPG osadzona w mrocznym swiecie fantasy, gdzie wcielasz sie w Geralta z Rivii, lowce potworow. 
+Polecana ze wzgledu na wciagajaca fabule, rozbudowany system wyborow moralnych oraz pieknie stworzony swiat.
+
+8.Fortnite
+Popularna gra battle royale, w ktorej 100 graczy walczy o przetrwanie na dynamicznej mapie. 
+Polecana ze wzgledu na szybka akcje, kreatywne budowanie i ciagle aktualizacje dodajace nowe elementy do rozgrywki.
+
+9.Assassin's Creed Odyssey
+Akcji-RPG osadzone w starozytnej Grecji, gdzie gracz wciela sie w najemnika lub najemniczke. 
+Polecana ze wzgledu na rozbudowana historie, otwarty swiat do eksploracji oraz dynamiczna walke.
+
+10.League of Legends
+Popularna gra typu MOBA, gdzie dwie druzyny rywalizuja ze soba, kontrolujac unikalne postacie o roznych umiejetnosciach. 
+Polecana ze wzgledu na taktyczna glebie, rywalizacje zespolowa i stale aktualizacje wprowadzajace nowych bohaterow.
+
+11.Animal Crossing: New Horizons
+Urocza gra symulacyjna, w ktorej gracz przeprowadza sie na bezludna wyspe, rozwijajac ja i budujac swoje idealne miejsce. 
+Polecana ze wzgledu na relaksujacy charakter, kreatywnosc w projektowaniu oraz mozliwosc interakcji z uroczymi antropomorficznymi zwierzetami.
+
+12.World of Warcraft
+Legendarna gra MMORPG, ktorej akcja toczy sie w fantastycznym swiecie Azeroth. 
+Polecana ze wzgledu na ogromny swiat do eksploracji, epickie rajdy oraz spolecznosc graczy.
+
+13.Counter-Strike: Global Offensive
+Klasyczna strzelanka pierwszoosobowa, gdzie dwie druzyny - terrorystow i antyterrorystow - rywalizuja w szybkich rundach. 
+Polecana ze wzgledu na intensywna akcje, taktyczne podejscie i popularnosc wsrod graczy e-sportowych.
+
+14.Splatoon 2
+Barwna strzelanka zespolowa, gdzie gracze kontroluja inklingi, istoty zdolne do zamieniania sie w kaluze farby. 
+Polecana ze wzgledu na innowacyjna rozgrywke, kreatywne mapy i zabawny charakter.
+
+15.Red Dead Redemption 2
+Epicka gra akcji osadzona w dzikim zachodzie, gdzie gracz wciela sie w Arthura Morgana, czlonka gangu przestepczego. 
+Polecana ze wzgledu na gleboka fabule, realistyczna oprawe wizualna oraz mozliwosc eksploracji olbrzymiego otwartego swiata.
+
+16.Fallout 4
+Postapokaliptyczna gra RPG, w ktorej gracz przemierza zrujnowany swiat po nuklearnej apokalipsie. 
+Polecana ze wzgledu na rozbudowany system kraftowania, eksploracje radioaktywnego swiata oraz unikalny system dialogow.
+
+17.Hollow Knight
+Urocza gra platformowa z elementami metroidvanii, gdzie gracz kontroluje malego rycerza przemierzajacego mroczny swiat pelen niebezpieczenstw. 
+Polecana ze wzgledu na precyzyjne sterowanie, bogata atmosfere i wymagajace walki z bossami.
+
+18.NieR: Automata
+Niezwykla gra akcji RPG, osadzona w postapokaliptycznym swiecie, gdzie gracz steruje androidami w walce z maszynami. 
+Polecana ze wzgledu na gleboka fabule, nietypowe podejscie do narracji oraz emocjonalna sciezke dzwiekowa.
+
+19.Star Wars Jedi: Fallen Order
+Przygodowa gra akcji osadzona w swiecie Gwiezdnych Wojen, gdzie gracz wciela sie w mlodego Jedi w ucieczce przed Imperium. 
+Polecana ze wzgledu na ekscytujace walki swietlnymi mieczami, rozbudowana fabule i wierna reprezentacje uniwersum Star Wars.
+
+20.Civilization VI
+Strategiczna gra turowa, w ktorej gracz buduje swoja cywilizacje od pradziejow do wspolczesnosci. 
+Polecana ze wzgledu na gleboka strategie, rozbudowany system rozwoju oraz mozliwosc rywalizacji z sztuczna inteligencja lub graczami online.
+

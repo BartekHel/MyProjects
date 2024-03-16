@@ -1,0 +1,128 @@
+<html>
+    <!-- 
+    Zadanie - portal do blogowania.
+    Założeniem projektu było stworzenie portalu do blogowania. Polecenie nie posiadało żadnych szczegółowych postanowień.
+    Założenia stworzone preze mnie: możliwość zalogowania się do portalu jako czytelnik bądź autor.
+    Jako autor - możliwość dodawania, usuwania oraz edytowania postów.
+    Jako czytelnik (oraz autor) - możliwość przeglądania postów, wyszukiwania oraz sprawdzania historii wydarzeń.
+    Wszystkie te założenia zostały spełnione.
+    -->
+    
+    <!-- 
+    Pola do uzupełnienia:
+    - pole na hasło admina - należy wpisać hasło autora bloga (defaultowo 1234),
+    - pole wyszukiwania posta - należy wpisać tytuł szukanego posta,
+    - pole usuwania posta - należy wpisać numer posta do usunięcia,
+    - pole dodawania posta - w części tytułowej należy podać tytuł posta do dodania bądź edycji,
+    natomiast w częście kontentu treść posta.
+    -->
+    
+    <!-- 
+    Baza danych i ciasteczka:
+    W bazie przechowywane są informacje o tytułach postów oraz ich teściach,
+    jak również informacje o logu aktualnej sesji i wszystkich sesji.
+    W ciasteczkach przechowywane są informacje o ilości wyszukań poszczególnch fraz w polu wyszukiwań,
+    jak również informacje o wszystkich ostatnich wyszukaniach.
+    -->
+   
+    <head>
+        <title>Strona logowania</title>
+        <script type="text/javascript" src="js/ajax.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/main.css" type="text/css"/>
+    </head>
+
+    <body>
+        <h1>Wybierz typ użytkownika</h1>
+
+        <form id="userTypeForm" onsubmit="return validateForm()" action="blog.html" method="GET">
+            <div class="buttons-container">
+                <input type="radio" id="reader" name="userType" value="reader">
+                <label for="reader">Czytelnik</label>
+
+                <input type="radio" id="owner" name="userType" value="owner">
+                <label for="owner">Właściciel</label>
+            </div>
+
+            <br>
+            <div id="passwordField" style="display: none;">
+                <label for="password">Hasło:</label>
+                <input type="password" id="password">
+            </div>
+
+            <input type="submit" value="Zatwierdź">
+
+            <div class="content" id="error-content">
+                <p id="result"></p>
+            </div>
+        </form>
+
+        <script>
+            let isError = false;
+
+            const ownerRadio = document.getElementById('owner');
+            const readerRadio = document.getElementById('reader');
+            const passwordField = document.getElementById('passwordField');
+            const passwordInput = document.getElementById('password');
+
+            ownerRadio.addEventListener('change', function () {
+                if (this.checked) {
+                    passwordField.style.display = 'block';
+                    var argInput = document.getElementById('password');
+                    argInput.value = '';
+                } else {
+                    passwordField.style.display = 'none';
+                }
+            });
+
+            readerRadio.addEventListener('change', function () {
+                if (this.checked) {
+                    passwordField.style.display = 'none';
+                    var argInput = document.getElementById('password');
+                    argInput.value = '';
+                } else {
+                    passwordField.style.display = 'block';
+                }
+            });
+
+            function validateForm() {
+                if (isError) {
+                    alert('Wystąpił błąd podczas pobierania danych!');
+                    return false;
+                }
+
+                if (!ownerRadio.checked && !readerRadio.checked) {
+                    alert('Nie wybrano typu użytkownika!');
+                    return false;
+                }
+
+                if (ownerRadio.checked && passwordInput.value !== '1234') {
+                    alert('Błędne hasło!');
+                    return false;
+                }
+
+                var argInput = document.getElementById('password');
+                argInput.value = '';
+                return true;
+            }
+
+            const errorContent = document.getElementById('result');
+            readerRadio.checked = true;
+            fetch('\database')
+                    .then(response => {
+                        if (!response.ok) {
+                            isError = true;
+                            throw new Error('Błąd połączenia!');
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        errorContent.innerHTML = data;
+                    })
+                    .catch(error => {
+                        isError = true;
+                        errorContent.innerHTML = error;
+                    });
+        </script>
+    </body>
+</html>
