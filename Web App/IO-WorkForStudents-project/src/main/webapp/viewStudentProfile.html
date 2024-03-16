@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile</title>
+        <script type="text/javascript" src="js/viewStudentProfile.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/profileStudent.css">
+        <link rel="stylesheet" type="text/css" href="css/profile.css">
+        <link rel="stylesheet" type="text/css" href="css/topBar.css">
+    </head>
+    <body>
+        <div class="top-bar" id="startPage">
+            <a class="logo" href = "mainPageEmployer.html">Work 4 Students</a>
+            <div class="button-container">
+                <a class = "topBarButton" href ="profileEmployer.html"  >Return</a>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="title-basicInfo-pic-files">
+                <h1 id="login"></h1>
+                <div class="under_title">
+                    <div class="basicInfo">
+                        <h3>Name:</h3> <h2 id="name"></h2>
+                        <h3>Surname:</h3> <h2 id="surname"></h2>
+                        <h3>Email:</h3> <h2 id="email"> </h2>
+                        <h3>City:</h3> <h2 id="city"> </h2>
+                       
+                    </div>
+                    <div class="image-container">
+                        <img id="picture" class='profile-pic-img'>
+                    </div>
+                    <div class='uploaded-files'>
+                        <h3> My uploaded files:</h3>
+                        <div class='uploaded-files-containter'>
+                            <div class="uploaded-files-list">
+                                <div class='uploaded-file'>cv.pdf</div>
+                                <div class='uploaded-file'>references.pdf</div>
+                                <div class='uploaded-file'>diploma.pdf</div>
+                                <div class='uploaded-file'>diploma2.pdf</div>
+                                <div class='uploaded-file'>certificate.pdf</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="description-and-ratings">
+                <h3 id="title"> </h3>
+                <div class="description-container">
+                    <p id="description"></p>
+                </div>
+				
+                <h3>My Ratings:</h3>
+                <div class="ratings-container" id = "ratings-container"></div>
+
+				<div>
+                    <h3>Opinion</h3><h1> <input type="text" id="contentInput" name="Short description" size=70 placeholder="Shortly describe your opinion." class ="input_styling"> </h1>
+                    <h4>Number of stars</h4>
+					<div class="stars-input-container">
+						<input type="number" min="1" max="5" step="1" id="starsInput" name="salary" value="3" class="input_styling_number">
+						<input type="submit" id="button" class="button-styling2" name="Submit" value="Submit" onclick="validateRating('contentInput', 'starsInput')"/>
+					</div>
+				</div> 
+			</div>
+        </div>
+    </body>
+</html>

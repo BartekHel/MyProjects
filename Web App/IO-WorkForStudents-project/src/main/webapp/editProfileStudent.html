@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile</title>
+        <script type="text/javascript" src="js/notificationJS.js"></script>
+        <script type="text/javascript" src="js/files.js"></script>
+        <script type="text/javascript" src="js/editProfileStudent.js"></script>
+        <script type="text/javascript" src="js/calendar.js"></script>
+        <link rel="stylesheet" href="css/calendar.css" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="css/editProfile.css">
+        <link rel="stylesheet" type="text/css" href="css/topBar.css">
+    </head>
+    <body>     
+        <div class="top-bar" id="startPage">
+            <a class="logo" href="mainPage.html">Work 4 Students</a>
+            <div class="buttons-topBar">
+                <button class="side-menu-trigger">Notifications</button>
+                <aside class="side-menu">
+                    <ul id="notificationList">
+                        <li>
+                        <notif>
+                            Notifications:  
+                        </notif>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Edit Your Profile</h1>
+            <form id="profileForm" enctype="multipart/form-data">
+                <div class="basicInfo">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="input_styling"><br>
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname" class="input_styling"><br>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" class="input_styling"><br>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" class="input_styling"><br>
+                </div>
+                <div class="image-and-files">
+                    <div class="fileEditor">
+                        <div class="image-container">
+                            <img id="picture" class="profile-pic-img">
+                        </div>
+                        <div class="editButton">
+                            <input type="file" id="fileInput" name="fileInput" accept=".jpg, .jpeg, .png">
+                            <label for="fileInput">Edit Picture</label>
+                        </div>
+                    </div>
+                    <div class="uploaded-files-containter">
+                        <div class="filesSelectionButton">
+                            <input type="file" id="filesInput" name="filesInput" accept=".pdf" multiple>
+                            <label for="filesInput">Add Files</label>
+                        </div>
+                        <div class="uploaded-files-list" id="uploaded-files-list-edit">
+                        </div>
+                    </div>
+                </div>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" class="description-input"></textarea>
+                <div class="saveButton" id="saveButton">
+                    <button type="button" class="saveButton" onclick="saveProfileChanges()">Save</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

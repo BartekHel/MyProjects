@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile</title>
+        <script type="text/javascript" src="js/notificationJS.js"></script>
+        <script type="text/javascript" src="js/profileEmployer.js"></script>
+        <script type="text/javascript" src="js/calendar.js"></script>
+        <link rel="stylesheet" href="css/calendar.css" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="css/profileEmployer.css">
+        <link rel="stylesheet" type="text/css" href="css/profile.css">
+        <link rel="stylesheet" type="text/css" href="css/topBar.css">
+    </head>
+    <body>
+        <div class="top-bar" id="startPage">
+            <a class="logo" href = "mainPageEmployer.html">Work 4 Students</a>
+            <div class="button-container">
+                <a href="offers.html" class = "topBarButton">My offers</a>
+                <button class="side-menu-trigger">Notifications</button>
+				<a class = "topBarButton" href ="login.html"  >Log out</a>
+            </div>
+        </div>
+        <aside class="side-menu">
+            <ul id="notificationList">
+                <li>
+                <notif>
+                    Notifications:  
+                </notif>
+                </li>
+            </ul>
+        </aside>
+        <div class="content">
+            <div class="title-basicInfo-pic-files">
+                <h1 id="login"></h1>
+                <div class="under_title">
+                    <div class="basicInfo">
+                        <h3>Company:</h3> <h2 id="company_name"></h2>
+                        <h3>NIP:</h3> <h2 id="NIP"></h2>
+                        <h3>Email:</h3> <h2 id="email"> </h2>
+                        <h3>City:</h3> <h2 id="city"> </h2>
+                        <div class="editButton">
+                            <a href="editProfileEmployer.html">Edit</a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img id="picture" class='profile-pic-img'>
+                    </div>
+                </div>
+            </div>
+            <div class="description-and-ratings">
+                <h3> About us: </h3>
+                <div class="description-container">
+                    <p id="description"></p>
+                </div>
+                <h3>My Ratings:</h3>
+                <div class="ratings-container" id = "ratings-container"></div>
+            </div>
+        </div>
+        <!-- Confirmation Modal -->
+		<div class="confirmation-modal" id="confirmationModal">
+			<p>Are you sure you want to perform this action?</p>
+			<p>Action: <span id="modalAction"></span></p>
+                        <div class="button-container"> 
+			<button class="button-styling" onclick="confirmAction(true, '')">Yes</button>
+			<button class="button-styling" onclick="confirmAction(false)">No</button>
+                        </div>
+		</div>
+    </body>
+</html>

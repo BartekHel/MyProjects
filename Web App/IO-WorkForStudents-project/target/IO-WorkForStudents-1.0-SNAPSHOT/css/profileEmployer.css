@@ -1,0 +1,138 @@
+.side-menu-trigger {
+
+}
+
+.side-menu {
+    display: flex;
+    box-sizing: border-box;
+    position: fixed;
+    height: 120%;
+    width: 360px;
+    overflow-y: auto;
+    top: 45px;
+    right: -400px;
+    padding: 0;
+    background: #A14A38;
+    color: white;
+    transition: 0.8s transform ease;
+}
+.side-menu.active{
+    transform: translateX(-400px);
+
+}
+
+
+
+.side-menu ul {
+    position: absolute;
+    display: flex;
+    height: calc(100% - 20px);
+    flex-wrap: wrap;
+    margin: 0 10px;
+    padding: 0;
+    list-style-type: none;
+    align-content: flex-start
+}
+
+.side-menu ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background: #A14A38;
+    flex-basis: 100%;
+    margin-top: 20px;
+    color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.side-menu ul li a {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #E66A50;
+    color: white;
+    border: 3px solid #A14A38;
+    border-radius: 10px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.side-menu ul li notif {
+    background-color: #E66A50;
+    color: white; 
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+}
+
+.side-menu ul li button {
+    padding: 10px;
+    background-color: #808080; /* Szary kolor tła */
+    color: white;
+    align-items: center;
+    margin: 10px;
+    border: #A14A38 2px solid;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.side-menu ul li .text-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+}
+
+.side-menu ul li .button-container {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.side-menu-trigger:focus ~ .side-menu, .side-menu:hover {
+    transform: translateX(-400px);
+}
+
+.confirmation-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-53%, -190%);
+    background: white;
+    padding: 40px;
+    border: 3px solid #A14A38;
+    border-radius: 10px;
+    z-index: 1000;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-styling{
+   background-color: #E66A50;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    height: 40px;
+    width: 60px; 
+    margin: 10px; 
+    border: #A14A38 2px solid;
+    transition: background-color 0.3s;
+}
+.button-styling:hover{
+    background-color: white;
+    color: #E66A50;
+    border-radius: 3px;
+    cursor: pointer;
+}
