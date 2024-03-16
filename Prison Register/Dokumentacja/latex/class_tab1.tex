@@ -1,0 +1,112 @@
+\hypertarget{class_tab1}{}\doxysection{Tab1 Class Reference}
+\label{class_tab1}\index{Tab1@{Tab1}}
+
+
+{\ttfamily \#include $<$classes.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_tab1_1_1_dane}{Dane}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_tab1_a794cb841d51b21e871c55645ac23c0a1}{odczyt}} (const string \&, \mbox{\hyperlink{class_list}{List}}$<$ \mbox{\hyperlink{struct_tab1_1_1_dane}{Tab1\+::\+Dane}} $>$ \&)
+\item 
+\mbox{\hyperlink{class_tab1_a97a6f9ef5cfb527c26db484515bb2de4}{$\sim$\+Tab1}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename U $>$ }\\class \mbox{\hyperlink{class_tab1_a8740adf5dfdafdc64940ab42ed663bd2}{List}}
+\item 
+bool \mbox{\hyperlink{class_tab1_a39a3aba230cc8d4cec630b7257264f06}{operator==}} (const \mbox{\hyperlink{struct_tab1_1_1_dane}{Tab1\+::\+Dane}} \&dane1, const \mbox{\hyperlink{struct_tab1_1_1_dane}{Tab1\+::\+Dane}} \&dane2)
+\item 
+bool \mbox{\hyperlink{class_tab1_aa18d01c39222af9a7aa94fc5dd623431}{operator$<$}} (const \mbox{\hyperlink{struct_tab1_1_1_dane}{Tab1\+::\+Dane}} \&dane1, const \mbox{\hyperlink{struct_tab1_1_1_dane}{Tab1\+::\+Dane}} \&dane2)
+\item 
+istream \& \mbox{\hyperlink{class_tab1_a3c27529a54e0675bc0f2fec1f56d1a9c}{operator$>$$>$}} (istream \&in, \mbox{\hyperlink{struct_tab1_1_1_dane}{Tab1\+::\+Dane}} \&dane)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Pierwsza z klas zawierajaca w sobie strukture odpowiedzialna za przechowywanie danych osobowych. Zaprzyjazniona z szablonem klasy Lista. 
+
+Definition at line \mbox{\hyperlink{classes_8h_source_l00010}{10}} of file \mbox{\hyperlink{classes_8h_source}{classes.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_tab1_a97a6f9ef5cfb527c26db484515bb2de4}\label{class_tab1_a97a6f9ef5cfb527c26db484515bb2de4}} 
+\index{Tab1@{Tab1}!````~Tab1@{$\sim$Tab1}}
+\index{````~Tab1@{$\sim$Tab1}!Tab1@{Tab1}}
+\doxysubsubsection{\texorpdfstring{$\sim$Tab1()}{~Tab1()}}
+{\footnotesize\ttfamily Tab1\+::$\sim$\+Tab1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destruktor klasy \mbox{\hyperlink{class_tab1}{Tab1}}. 
+
+Definition at line \mbox{\hyperlink{classes_8h_source_l00069}{69}} of file \mbox{\hyperlink{classes_8h_source}{classes.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tab1_a794cb841d51b21e871c55645ac23c0a1}\label{class_tab1_a794cb841d51b21e871c55645ac23c0a1}} 
+\index{Tab1@{Tab1}!odczyt@{odczyt}}
+\index{odczyt@{odczyt}!Tab1@{Tab1}}
+\doxysubsubsection{\texorpdfstring{odczyt()}{odczyt()}}
+{\footnotesize\ttfamily void Tab1\+::odczyt (\begin{DoxyParamCaption}\item[{const string \&}]{nazwa,  }\item[{\mbox{\hyperlink{class_list}{List}}$<$ \mbox{\hyperlink{struct_tab1_1_1_dane}{Tab1\+::\+Dane}} $>$ \&}]{lista }\end{DoxyParamCaption})}
+
+Metoda odpowiedzialna za odczyt danych z pliku. 
+
+Definition at line \mbox{\hyperlink{classes_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{classes_8cpp_source}{classes.\+cpp}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_tab1_a8740adf5dfdafdc64940ab42ed663bd2}\label{class_tab1_a8740adf5dfdafdc64940ab42ed663bd2}} 
+\index{Tab1@{Tab1}!List@{List}}
+\index{List@{List}!Tab1@{Tab1}}
+\doxysubsubsection{\texorpdfstring{List}{List}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+friend class \mbox{\hyperlink{class_list}{List}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line \mbox{\hyperlink{classes_8h_source_l00011}{11}} of file \mbox{\hyperlink{classes_8h_source}{classes.\+h}}.
+
+\mbox{\Hypertarget{class_tab1_aa18d01c39222af9a7aa94fc5dd623431}\label{class_tab1_aa18d01c39222af9a7aa94fc5dd623431}} 
+\index{Tab1@{Tab1}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Tab1@{Tab1}}
+\doxysubsubsection{\texorpdfstring{operator$<$}{operator<}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_tab1_1_1_dane}{Tab1\+::\+Dane}} \&}]{dane1,  }\item[{const \mbox{\hyperlink{struct_tab1_1_1_dane}{Tab1\+::\+Dane}} \&}]{dane2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Operator mniejszosci. 
+
+Definition at line \mbox{\hyperlink{classes_8h_source_l00044}{44}} of file \mbox{\hyperlink{classes_8h_source}{classes.\+h}}.
+
+\mbox{\Hypertarget{class_tab1_a39a3aba230cc8d4cec630b7257264f06}\label{class_tab1_a39a3aba230cc8d4cec630b7257264f06}} 
+\index{Tab1@{Tab1}!operator==@{operator==}}
+\index{operator==@{operator==}!Tab1@{Tab1}}
+\doxysubsubsection{\texorpdfstring{operator==}{operator==}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_tab1_1_1_dane}{Tab1\+::\+Dane}} \&}]{dane1,  }\item[{const \mbox{\hyperlink{struct_tab1_1_1_dane}{Tab1\+::\+Dane}} \&}]{dane2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Operator porownania. 
+
+Definition at line \mbox{\hyperlink{classes_8h_source_l00039}{39}} of file \mbox{\hyperlink{classes_8h_source}{classes.\+h}}.
+
+\mbox{\Hypertarget{class_tab1_a3c27529a54e0675bc0f2fec1f56d1a9c}\label{class_tab1_a3c27529a54e0675bc0f2fec1f56d1a9c}} 
+\index{Tab1@{Tab1}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Tab1@{Tab1}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{in,  }\item[{\mbox{\hyperlink{struct_tab1_1_1_dane}{Tab1\+::\+Dane}} \&}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Operator wejscia strumieniowego. 
+
+Definition at line \mbox{\hyperlink{classes_8h_source_l00063}{63}} of file \mbox{\hyperlink{classes_8h_source}{classes.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classes_8h}{classes.\+h}}\item 
+\mbox{\hyperlink{classes_8cpp}{classes.\+cpp}}\end{DoxyCompactItemize}
