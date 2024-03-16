@@ -1,0 +1,25 @@
+﻿  Trwa skanowanie źródeł pod kątem zależności modułów...
+  Program.cpp
+C:\Users\smier\96c7e74d-gr12-repo\Projekt\Traffic Simulator\Program.cpp(174,44): warning C4267: "inicjowanie": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\smier\96c7e74d-gr12-repo\Projekt\Traffic Simulator\Program.cpp(174,20): warning C4267: "inicjowanie": konwersja z "size_t" do "const int", możliwa utrata danych
+C:\Users\smier\96c7e74d-gr12-repo\Projekt\Traffic Simulator\Program.cpp(186,41): warning C4267: "argument": konwersja z "size_t" do "_Ty", możliwa utrata danych
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\smier\96c7e74d-gr12-repo\Projekt\Traffic Simulator\Program.cpp(187,38): warning C4267: "argument": konwersja z "size_t" do "_Ty", możliwa utrata danych
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\smier\96c7e74d-gr12-repo\Projekt\Traffic Simulator\Program.cpp(294,19): warning C4267: "inicjowanie": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\smier\96c7e74d-gr12-repo\Projekt\Traffic Simulator\Program.cpp(306,32): warning C4267: "inicjowanie": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\smier\96c7e74d-gr12-repo\Projekt\Traffic Simulator\Program.cpp(306,21): warning C4267: "inicjowanie": konwersja z "size_t" do "const int", możliwa utrata danych
+C:\Users\smier\96c7e74d-gr12-repo\Projekt\Traffic Simulator\Program.cpp(315,41): warning C4267: "inicjowanie": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\smier\96c7e74d-gr12-repo\Projekt\Traffic Simulator\Program.cpp(315,21): warning C4267: "inicjowanie": konwersja z "size_t" do "const int", możliwa utrata danych
+  Trwa generowanie kodu
+  2 of 3368 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    8 functions had inline decision re-evaluated but remain unchanged
+  Zakończono generowanie kodu
+  Traffic Simulator.vcxproj -> C:\Users\smier\96c7e74d-gr12-repo\Projekt\Traffic Simulator\x64\Release\Traffic Simulator.exe
