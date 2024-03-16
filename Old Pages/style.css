@@ -1,0 +1,49 @@
+body
+{
+		font-family: Verdana;
+		background-color: #9ea5b0;
+}
+#container
+{
+	width: 100%;
+}
+#logo
+{
+	font-size: 25px;
+	background-color: gray;
+	color: #a0caf2;
+	text-align: center;
+	padding: 15px;
+}
+a.thelink
+{
+	color: #222324;
+	text-decoration: none;
+}
+#news
+{
+	float:left;
+	width: 350px;
+	color:#5c1e1e;
+	font-size: 20px;
+}
+#menu
+{
+	word-spacing: 30px;
+	background-color: #afb0b3;
+	text-align: center;
+	font-size: 25px;
+	padding: 10px;
+}
+#content
+{
+	text-align: center;
+	height:850px;
+	font-size: 20px;
+}
+#footer
+{
+	clear: both;
+	text-align: center;
+	padding: 15px;
+}
