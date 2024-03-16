@@ -1,0 +1,14 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: Katalog pośredni (x64\Debug\) zawiera pliki udostępnione z innego projektu (GUI_Project.vcxproj). Może to spowodować niepoprawne zachowanie podczas oczyszczania i ponownej kompilacji.
+  main.cpp
+C:\Users\smier\Downloads\JA\Kopia\Binaryzacja\GuiJa\main.cpp(149,19): warning C4244: "return": konwersja z "WPARAM" do "int", możliwa utrata danych
+C:\Users\smier\Downloads\JA\Kopia\Binaryzacja\GuiJa\main.cpp(179,25): warning C4244: "inicjowanie": konwersja z "LRESULT" do "int", możliwa utrata danych
+C:\Users\smier\Downloads\JA\Kopia\Binaryzacja\GuiJa\main.cpp(185,29): warning C4244: "inicjowanie": konwersja z "LRESULT" do "int", możliwa utrata danych
+C:\Users\smier\Downloads\JA\Kopia\Binaryzacja\GuiJa\main.cpp(680,34): warning C4311: "typ rzutowania": obcięcie wskaźnika z "unsigned char *" do "DWORD"
+C:\Users\smier\Downloads\JA\Kopia\Binaryzacja\GuiJa\main.cpp(680,34): warning C4302: "typ rzutowania": obcięcie z "unsigned char *" do "DWORD"
+C:\Users\smier\Downloads\JA\Kopia\Binaryzacja\GuiJa\main.cpp(693,85): warning C4311: "typ rzutowania": obcięcie wskaźnika z "unsigned char *" do "DWORD"
+C:\Users\smier\Downloads\JA\Kopia\Binaryzacja\GuiJa\main.cpp(693,85): warning C4302: "typ rzutowania": obcięcie z "unsigned char *" do "DWORD"
+main.obj : error LNK2019: nierozpoznany symbol zewnętrzny __imp_BinaryCpp przywołany w funkcji "void __cdecl RunAlgorithm(int,int)" (?RunAlgorithm@@YAXHH@Z)
+main.obj : error LNK2019: nierozpoznany symbol zewnętrzny BinaryAsm przywołany w funkcji "void __cdecl RunAlgorithm(int,int)" (?RunAlgorithm@@YAXHH@Z)
+..\Debug\AsmAlgo.lib : warning LNK4272: wystąpił konflikt typu maszyny biblioteki „x86” z typem maszyny docelowej „x64”
+..\Debug\Bin_cpp.lib : warning LNK4272: wystąpił konflikt typu maszyny biblioteki „x86” z typem maszyny docelowej „x64”
+C:\Users\smier\Downloads\JA\Kopia\Binaryzacja\x64\Debug\Binarization.exe : fatal error LNK1120: liczba nierozpoznanych elementów zewnętrznych: 2

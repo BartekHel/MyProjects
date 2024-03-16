@@ -1,0 +1,12 @@
+﻿  Assembling bin_asm.asm...
+bin_asm.asm(31): warning A6004: procedure argument or local not referenced : data
+bin_asm.asm(31): warning A6004: procedure argument or local not referenced : size_
+bin_asm.asm(31): warning A6004: procedure argument or local not referenced : value
+  pch.cpp
+  dllmain.cpp
+  Trwa generowanie kodu
+  Previous IPDB not found, fall back to full compilation.
+  All 1 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Zakończono generowanie kodu
+bin_asm.obj : error LNK2026: moduł niebezpieczny dla obrazu SAFESEH
+C:\Users\smier\Downloads\JA\Binaryzacja\Release\Bin_asm.dll : fatal error LNK1281: Nie można wygenerować obrazu SAFESEH.

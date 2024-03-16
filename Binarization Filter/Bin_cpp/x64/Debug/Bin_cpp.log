@@ -1,0 +1,8 @@
+﻿  pch.cpp
+  bin_cpp.cpp
+C:\Users\smier\Downloads\JA\Binaryzacja\Bin_cpp\bin_cpp.cpp(29,52): warning C4273: "BinaryCpp": niespójne powiązanie biblioteki dll
+C:\Users\smier\Downloads\JA\Binaryzacja\Bin_cpp\bin_cpp.h(11,25): message : zobacz poprzednią definicję „BinaryCpp”
+  dllmain.cpp
+  Generowanie kodu...
+     Trwa tworzenie biblioteki C:\Users\smier\Downloads\JA\Binaryzacja\x64\Debug\Bin_cpp.lib i obiektu C:\Users\smier\Downloads\JA\Binaryzacja\x64\Debug\Bin_cpp.exp
+  Bin_cpp.vcxproj -> C:\Users\smier\Downloads\JA\Binaryzacja\x64\Debug\Bin_cpp.dll

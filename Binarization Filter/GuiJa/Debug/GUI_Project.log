@@ -1,0 +1,13 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (GUI_Project.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+  The contents of <format> are available only in c++latest mode with concepts support;
+  see https://github.com/microsoft/STL/issues/1814 for details.
+C:\Users\stobiasiewicz\Desktop\Assembler\GUI_Project\main.cpp(116,10): warning C4101: 'bChecked': unreferenced local variable
+C:\Users\stobiasiewicz\Desktop\Assembler\GUI_Project\main.cpp(488,27): warning C4477: '_snprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type '_Rep'
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\stobiasiewicz\Desktop\Assembler\GUI_Project\main.cpp(488,27): message : consider using '%lld' in the format string
+C:\Users\stobiasiewicz\Desktop\Assembler\GUI_Project\main.cpp(488,27): message : consider using '%I64d' in the format string
+  GUI_Project.vcxproj -> C:\Users\stobiasiewicz\Desktop\Assembler\Debug\GuiJa.exe

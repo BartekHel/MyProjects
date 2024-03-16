@@ -1,0 +1,5 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: Katalog pośredni (Debug\) zawiera pliki udostępnione z innego projektu (AsmAlg.vcxproj, AsmAlgo.vcxproj). Może to spowodować niepoprawne zachowanie podczas oczyszczania i ponownej kompilacji.
+  Assembling bin_asm.asm...
+  pch.cpp
+  dllmain.cpp
+  AsmAlg.vcxproj -> C:\Users\smier\Downloads\JA\Binaryzacja\Debug\Bin_asm.lib
