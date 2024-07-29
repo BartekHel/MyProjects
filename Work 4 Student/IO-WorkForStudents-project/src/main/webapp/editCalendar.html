@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile</title>
+        <script type="text/javascript" src="js/notificationJS.js"></script>
+        <script type="text/javascript" src="js/editCalendar.js"></script>
+        <script type="text/javascript" src="js/calendar.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/calendar.css"/>
+        <link rel="stylesheet" type="text/css" href="css/editCalendar.css">
+        <link rel="stylesheet" type="text/css" href="css/topBar.css">
+    </head>
+    <body>
+        <div class="top-bar" id="startPage">
+            <a class="logo" href = "mainPage.html">Work 4 Students</a>
+            <div class="buttons-topBar" style="margin-right: 20px;">
+				<button type="button" onclick="returnWhere()">Return</button> 
+			</div>
+
+        </div>
+		<br>
+
+
+        <div class="content">
+			<table id="outputTable"> 
+				<tr> 
+					<th>Begin</th> 
+					<th>End</th> 
+					<th>Day</th> 
+					<th>Action</th> 
+				</tr>
+			</table> 
+			<div id="calendar"></div>
+			<button type="button" onclick="save()">Save</button> 
+        </div>
+    </body>
+</html>
