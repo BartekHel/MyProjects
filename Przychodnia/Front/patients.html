@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <script type="text/javascript" src="client.js"></script>
+    <title>Pacjenci</title>
+</head>
+<body onload="fillSelectMenu('choose-patient', 'patient/listpatients')">
+    <h1>Pacjenci</h1>
+    <button onclick="showTable('patients', 'patient/listpatients')">Wyświetl wszystkich pacjentów</button>
+    <table id="patients"></table>
+    <h2>Wybierz pacjenta</h2>
+    <select name="choose-patient" id="choose-patient">
+    </select><br><br>
+    <button onclick="showSelected('choose-patient', 'patientsAppointments', 'patient/listapp')">Wyświetl wszystkie wizyty wybranego pacjenta</button>
+    <table id="patientsAppointments"></table><br>
+    <button onclick="showSelected('choose-patient', 'patientsDiseases', 'patient/listdis')">Wyświetl wszystkie choroby pacjenta</button>
+    <table id="patientsDiseases"></table><br>
+    <button onclick="deleteSelected('choose-patient', 'patient/del')">Usuń wybranego pacjenta</button>
+    <h2>Dodaj pacjenta</h2>
+    <form>
+        <label for="fname">Imię:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Nazwisko:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="address">Adres:</label><br>
+        <input type="text" id="address" name="address"><br>
+        <input type="button" id="addButton" value="Dodaj pacjenta" onclick="addPatient('fname', 'lname', 'address');"/>
+    </form>
+</body>
+</html>

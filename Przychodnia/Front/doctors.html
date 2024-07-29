@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <script type="text/javascript" src="client.js"></script>
+    <title>Doktorzy</title>
+</head>
+<body onload="fillSelectMenu('choose-doctor', 'doctor/listdoctors')">
+    <h1>Doktorzy</h1>
+    <button onclick="showTable('doctors', 'doctor/listdoctors')">Wyświetl wszystkich doktorów</button>
+    <table id="doctors"></table>
+    <h2>Wizyty doktora</h2>
+    <select name="choose-doctor" id="choose-doctor">
+    </select><br><br>
+    <button onclick="showSelected('choose-doctor', 'doctorsAppointments', 'doctor/listapp')">Wyświetl wszystkie wizyty wybranego doktora</button>
+    <table id="doctorsAppointments"></table>
+    <button onclick="deleteSelected('choose-doctor', 'doctor/del')">Usuń wybranego doktora</button>
+    <h2>Dodaj doktora</h2>
+    <form>
+        <label for="fname">Imię:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Nazwisko:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="spec">Specjalizacja:</label><br>
+        <input type="text" id="spec" name="spec"><br>
+        <input type="button" id="addButton" value="Dodaj doktora" onclick="addDoctor('fname', 'lname', 'spec');"/>
+    </form>
+</body>
+</html>

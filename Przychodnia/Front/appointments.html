@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <script type="text/javascript" src="client.js"></script>
+    <title>Wizyty</title>
+</head>
+<body onload="fillMenu()">
+    <h1>Wizyty</h1>
+    <button onclick="showTable('appointments', 'appointment/listappointments')">Wyświetl wszystkie wizyty</button>
+    <table id="appointments"></table>
+    <h2>Dodaj wizytę</h2>
+    <form>
+        <label for="date">Data wizyty:</label><br>
+        <input type="datetime-local" id="date" name="date"><br>
+        <label for="room_number">Numer pokoju:</label><br>
+        <input type="number" id="room_number" name="room_number" min="1"><br>
+        <label for="prescription">Recepta</label><br>
+        <input type="text" id="prescription" name="prescription"><br>
+        <label for="choose-patient">Wybierz pacjenta:</label><br>
+        <select name="choose-patient" id="choose-patient">  
+        </select><br>
+        <label for="choose-doctor">Wybierz doktora:</label><br>
+        <select name="choose-doctor" id="choose-doctor">
+        </select><br>
+        <label for="choose-disease">Wybierz chorobę</label><br>
+        <select name="choose-disease" id="choose-disease">
+        </select><br>
+        <input type="button" id="addButton" value="Dodaj wizytę" onclick="addAppointment('date', 'room_number', 'prescription', 'choose-patient', 'choose-doctor', 'choose-disease');"/>
+    </form>
+</body>
+</html>

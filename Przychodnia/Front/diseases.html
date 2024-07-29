@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <script type="text/javascript" src="client.js"></script>
+    <title>Choroby</title>
+</head>
+<body onload="fillSelectMenu('choose-disease', 'disease/listdiseases')">
+    <h1>Choroby</h1>
+    <button onclick="showTable('diseases', 'disease/listdiseases')">Wyświetl wszystkie choroby</button>
+    <table id="diseases"></table><br>
+    <select name="choose-disease" id="choose-disease">
+    </select><br><br>
+    <button onclick="deleteSelected('choose-disease', 'disease/del')">Usuń wybraną chorobę</button>
+    <h2>Dodaj chorobę</h2>
+    <form>
+        <label for="name">Nazwa:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <input type="button" id="addButton" value="Dodaj chorobę" onclick="addDisease('name');"/>
+    </form>
+</body>
+</html>
