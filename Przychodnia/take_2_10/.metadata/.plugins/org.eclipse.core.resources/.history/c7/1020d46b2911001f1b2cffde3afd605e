@@ -1,0 +1,42 @@
+package pl.kurs.entity;
+
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
+
+@Entity
+@XmlRootElement
+public class PatientsDiseases implements Serializable {
+    private static final long serialVersionUID = 1L;
+    int patientsdiseases_id;
+    Set<Patient> patients = new HashSet<Patient>();
+    Set<Disease> diseases = new HashSet<Disease>();
+
+    @Id
+    @GeneratedValue
+    @XmlAttribute
+    public int getPatientsDiseases_id() {
+        return patientsdiseases_id;
+    }
+
+    public void setPatientsDiseases_id(int patientsdiseases_id) {
+        this.patientsdiseases_id = patientsdiseases_id;
+    }
+
+    @ManyToOne
+    public Set<Patient> getPatients() {
+        return patients;
+    }
+    public void setPatients(Set<Patient> patients) {
+        this.patients = patients;
+    }
+
+    @ManyToOne
+    public Set<Disease> getDiseases() {
+        return diseases;
+    }
+    public void setDiseases(Set<Disease> diseases) {
+        this.diseases = diseases;
+    }
+}
