@@ -1,0 +1,379 @@
+.spinner-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  height: 200px;
+  width: 200px;
+  background-color: #e2e4e6;
+  border-radius: 50%;
+  overflow: hidden;
+  animation:  rotate 10s linear infinite;
+}
+.spinner{
+  z-index: 1000;
+  height: 150px;
+  width: 150px;
+  
+  animation: jump 0.4s ease-in-out infinite;
+  
+  background-image: url('../../background/szop4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes rotate{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(25%);
+  }
+  50% {
+    transform: translateY(40%);
+  }
+  100% {
+    transform: translateY(25%);
+  }
+}
+
+.side-panel {
+  position: fixed;
+  margin-top: 7.5vh;
+  margin-left: 5px;
+  width: 20%;
+  height: 92%;
+  float: left;
+  background-color: #555;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.sidePanelSearch {
+  position: relative;
+  top: -10px;
+  left: 10px;
+  border: 1px solid #111;
+  width: 95%;
+  height: 5vh;
+  font-size: 0.5em;
+  background-color: #ffffff;
+}
+
+.sidePanelButton,
+.filterButton {
+  position: relative;
+  top: -14px;
+  margin-left: 5px;
+  width: 35%;
+  height: 45px;
+  font-size: 0.3em;
+  border-radius: 5px;
+  border: 1px solid #111;
+  cursor: pointer;
+  color: #fff;
+  background-color: #1f364e;
+  transition: background-color 0.3s ease;
+}
+
+.filterButton {
+  position: relative;
+  top: -20px;
+  width: 60%;
+}
+
+.sidePanelButton:hover,
+.filterButton:hover {
+  background-color: #325981;
+}
+
+.sortLabelFrame,
+.filterLabelFrame {
+  width: 95%;
+  height: 55%;
+  padding: 1.3em;
+  margin: 5px auto;
+  border: #111 1px solid;
+  border-radius: 5px;
+  background-color: #e2e4e6;
+  font-size: 20px;
+}
+
+.sortLabelFrame {
+  height: 55%;
+  margin-top: -10px;
+  line-height: 1.6;
+}
+
+.filterLabelFrame {
+  height: 25%;
+}
+
+.sortLabelFrame > * {
+  margin: 5px;
+}
+
+.sideMainHeader {
+  position: relative;
+  top: -10px;
+  color: #1f1f1f;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sideMainHeader1 {
+  position: relative;
+  top: -10px;
+  color: #1f1f1f;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 11%;
+}
+
+.customCheckbox {
+  display: none;
+}
+
+.customCheckbox + label {
+  position: relative;
+  top: -30px;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.customCheckbox + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #0056b3;
+  border-radius: 3px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.customCheckbox:checked + label:before {
+  background-color: #0056b3;
+}
+
+.customCheckbox:checked + label:after {
+  content: "\2713";
+  font-size: 14px;
+  position: absolute;
+  top: 0.1px;
+  left: 4px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.customCheckbox:hover + label:before {
+  border-color: #0056b3;
+}
+
+#myCheckbox.customCheckbox + label:before {
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #007bff;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+  color: #333;
+}
+
+.customSortLabel {
+  color: #333;
+  font-size: 110%;
+  border: none;
+  border-radius: 100px;
+  transition: background-color 0.3s ease;
+  margin-left: 10%;
+}
+
+.customNumberLabel {
+  width: 10%;
+  color: #333;
+  margin: auto;
+  font-size: 0.8em;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.filterLabelFrame {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sideh1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.filterLabelFrame > h2 {
+  flex-basis: 91%;
+  color: #333;
+}
+
+.customNumber {
+  width: 40%;
+  flex-basis: 30%;
+  margin: auto;
+  padding: 10px 5px;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border: #111 1px solid;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  float: right;
+}
+
+.offerCard {
+  display: flex;
+  width: 48%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #aaa8a8;
+}
+
+.offerDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.offerDetails h1 {
+  text-align: center;
+  font-size: 80%;
+}
+
+.offerImage {
+  width: 50%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-right: 20px;
+}
+
+.imageAndOthers {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.imageAndOthers .offerImage {
+  width: 50%;
+}
+
+.imageAndOthers .description {
+  font-size: 55%;
+  width: 45%;
+  text-align: left;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.offerButton {
+  margin: 0 5px;
+  padding: 8px 16px;
+  background-color: #1f364e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.offerButton:hover {
+  background-color: #325981;
+}
+
+.containersContainer {
+  flex-basis: 70%;
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  margin-left: 7%;
+  margin-top: 5%;
+}
+
+.footer {
+  height: 200px;
+  flex-basis: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.footerButton {
+  background-color: #1f364e;
+  color: #fff;
+  font-size: 0.5em;
+  width: 15%;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 8px;
+  transition: background-color 0.3s;
+  border: #444 1px solid;
+  margin-left: 100px;
+}
+
+.footerButton:hover {
+  background-color: #325981;
+}
+
+.moreOffers {
+  background-color: #1f364e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 15%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.moreOffers:hover {
+  background-color: #325981;
+}

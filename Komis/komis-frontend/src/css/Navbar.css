@@ -1,0 +1,95 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 7vh;
+  background-color: #333;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.nav-link,
+.nav-button {
+  margin-top: 3px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 5px 8px;
+  font-size: 0.5em;
+}
+
+.nav-buttonSpec {
+  background-color: #294768;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  margin-right: 10px;
+  height: 40px;
+  padding: 0 16px;
+  font-size: 20px;
+  margin-top: 3px;
+}
+
+.nav-buttonSpec:hover {
+  background-color: #325981;
+}
+
+.nav-link {
+  margin-top: 10px;
+  padding: 1px;
+}
+
+.nav-buttons {
+  display: flex;
+}
+
+.nav-button {
+  background-color: #555;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+#link {
+  padding: 1px 24px;
+  height: 40px;
+}
+
+#logout {
+  padding: 1px 24px;
+  height: 40px;
+  background-color: #222;
+}
+
+#logout:hover {
+  background-color: #292828;
+}
+
+.nav-button:hover {
+  background-color: #777;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.none {
+  
+}
+
+.name {
+  font-size: 0.5em;
+  margin-left: 13px;
+  color: #dbdada;
+  border: 1px solid black;
+  padding: 3px;
+}

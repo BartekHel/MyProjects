@@ -1,0 +1,161 @@
+.add-page {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.dropbtn {
+    background-color: #6a82c5;
+    color: white;
+    padding: 16px;
+    font-size: 25px;
+    margin-left: 10px;
+    width: 250px;
+    border: none;
+    margin-top: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #6a82c5;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #91aaee;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: flex;
+    background-color: #b7c5e9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 10px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+}
+
+.dropdown-content a:hover {
+    background-color: #7489c4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 85%;
+    max-height: 75%;
+    overflow-y: scroll;
+}
+
+.car-form label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.car-form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.car-form button {
+    background-color: #6a82c5;
+    color: white;
+    padding: 15px 30px; 
+    font-size: 22px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.car-form button:hover {
+    background-color: #91aaee;
+}
+
+#message {
+    margin-top: 20px;
+    color: rgb(100, 79, 218);
+    font-size: 18px;
+    text-align: center;
+}
+
+.role-select {
+    width: 150px;
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"><path d="M4 6l4 4 4-4"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 16px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.role-select option {
+    font-size: 12px;
+}
+
+.role-select:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,123,255,.5);
+}
+
+.userD {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #b3b0b0;
+    color: rgb(63, 32, 32);
+}
+
+.user {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #b3b0b0;
+    border-radius: 5px;
+    color: black;
+}

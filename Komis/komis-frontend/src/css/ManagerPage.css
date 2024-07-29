@@ -1,0 +1,129 @@
+.wrapper{
+    min-height: 130%;
+    width: 100vw;
+    padding-top: 7vh;
+    display: flex;
+  }
+
+  .manager-page-wrapper{
+    position: relative;
+    display: flex;
+    padding: 20px;
+    min-height: 130vh;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: white;
+  }
+
+  .button-wrapper{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 300px;
+    height: 300px;
+  }
+  button .show{
+    width: 200px;
+    height: 80px;
+    background-color: azure;
+  }
+
+  #downloadButton{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    height: 60px;
+  }
+
+  #downloadButton:hover {
+    background-color: #58c75b;
+  }
+    .manager-page-wrapper h5{
+        font-size: 36px;
+        font-weight: 500;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #Report{
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .employeePanel{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;    
+    }
+    .employeePanel p{
+        font-size: 32px;
+    }
+
+    .employeeLabel{
+        margin-bottom: 10px;
+        min-width: 800px;
+        display: flex;
+        justify-content: space-between;
+    }
+  
+    .employeeList{
+    z-index: 3;
+      display: flex;
+      flex-direction: column;
+      min-width: 800px;
+      /* max-height: 640px; */
+      /* height: 560px; */
+      border: 1px solid black;
+    }
+
+    
+
+    .employeeList > div{
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid black;
+    }
+    .employeeList > div:hover{
+        background-color: rgb(184, 184, 184);
+    }
+
+    .employeeList > div p{
+        font-size: 20px;
+    }
+
+    .addPanel{
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 300px;
+    }
+
+    .addEmployee{
+        margin-top: -20px;
+    }
+
+    .addPanel p{
+        width: 200px;
+        line-height: 40px;
+        text-align: center;
+        /* border: 1px solid black; */
+        font-size: 24px;
+    }
+    .addPanel p:hover{
+        cursor: pointer;
+        color: gray;
+        font-size: 24px;
+        /* text-decoration: underline; */
+    }

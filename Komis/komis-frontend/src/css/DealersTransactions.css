@@ -1,0 +1,78 @@
+body {
+    background-image: url('../../background/background-1113715_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    overflow: auto;
+    
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#serviceOrderContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 85%;
+    max-height: 85%;
+    overflow-y: scroll;
+}
+
+
+link{
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-button{
+    font-size: 20px;
+}
+
+
+.navbutton:hover {
+    background-color: darkgrey;
+}
+
+.navbutton:disabled {
+    background-color: lightgrey;
+    cursor: not-allowed;
+}
+
+td, th {
+    padding: 15px;
+    color: black;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.button {
+    background-color: #4287f5;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #1a4e96;
+  }
+  
